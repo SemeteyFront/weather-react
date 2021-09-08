@@ -1,0 +1,62 @@
+.carousel {
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.headerBtn {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.headerBtnActive {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.header h2 {
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+.header button:first-of-type {
+  margin-right: 16px;
+}
+
+.content {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 24px;
+  grid-auto-columns: 100px;
+  margin-top: 18px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.card {
+  padding: 16px 14px 15px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  height: 143px;
+  background-color: var(--primary-bg);
+  border-radius: 8px;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.05);
+}
+.card p {
+  text-align: center;
+}
+
+.card p, .card img {
+  grid-column-end: span 2;
+}
+
+.card img {
+  align-self: center;
+}
